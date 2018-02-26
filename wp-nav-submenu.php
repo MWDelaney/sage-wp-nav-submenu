@@ -49,8 +49,16 @@ add_filter( 'wp_nav_menu_objects', function($sorted_menu_items, $args) {
         unset( $sorted_menu_items[$key] );
       }
     }
-    
-    return $sorted_menu_items;
+    if(!$args->show_parent_only) {
+      if(count($sorted_menu_items) > 1) {
+        return $sorted_menu_items;
+      }
+      else {
+        return array();
+      }
+    } else {
+      return $sorted_menu_items;
+    }
   } else {
     return $sorted_menu_items;
   }
