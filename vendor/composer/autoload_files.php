@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    '56cba857ac8cb3a37b69f3cc295882a8' => $baseDir . '/wp-nav-sumenu.php',
+    '892bcb2ca540db854c219c7b598eb5d0' => $baseDir . '/wp-nav-submenu.php',
 );
