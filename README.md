@@ -1,8 +1,8 @@
 # Sage 9 friendly method for getting `wp_nav_menu()` submenu items based on parent or sibling
 
-This package is based entirely on [this code](https://christianvarga.com/how-to-get-submenu-items-from-a-wordpress-menu-based-on-parent-or-sibling/) from @levymetal.
+This package is based entirely on [this code](https://christianvarga.com/how-to-get-submenu-items-from-a-wordpress-menu-based-on-parent-or-sibling/) from [levymetal](https://github.com/levymetal).
 
-The instructions below are also taken from @levymetal's excellent documentation.
+The instructions below are also taken from [levymetal](https://github.com/levymetal)'s excellent documentation.
 
 To install, run the following in your Sage9-based theme directory:
 
