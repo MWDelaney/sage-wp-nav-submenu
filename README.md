@@ -20,7 +20,7 @@ wp_nav_menu( array(
 ) );
 ```
 
-By default, if you have many nested levels, this code will filter the menu by the absolute top level parent. If you want the menu to drill down dynamically by filtering the menu based on the direct parent, pass a “direct_parent” => true parameter to the wp_nav_menu call.
+By default, if you have many nested levels, this code will filter the menu by the absolute top level parent. If you want the menu to drill down dynamically by filtering the menu based on the direct parent, pass a `"direct_parent" => true` parameter to the `wp_nav_menu` call.
 
 ```php
 wp_nav_menu( array(
@@ -31,7 +31,7 @@ wp_nav_menu( array(
 ) );
 ```
 
-If you want to include the parent/root element in the menu, you can pass in a “show_parent” => true parameter to display the root level item.
+If you want to include the parent/root element in the menu, you can pass in a `"show_parent" => true` parameter to display the root level item.
 
 ```php
 wp_nav_menu( array(
@@ -39,6 +39,18 @@ wp_nav_menu( array(
   ...
   'sub_menu'    => true,
   'show_parent' => true
+) );
+```
+
+If you want to include the parent/root element in the menu even if it has no children, you can pass in a `"show_parent_only" => true` parameter to display the root level item.
+
+```php
+wp_nav_menu( array(
+  'menu'        => 'Menu Name',
+  ...
+  'sub_menu'    => true,
+  'show_parent' => true,
+  'show_parent_only' => true
 ) );
 ```
 
