@@ -1,0 +1,19 @@
+{
+  "name": "mwdelaney/sage-wp-nav-submenu",
+  "description": "Get submenu items from a WordPress menu based on parent or sibling",
+  "keywords": ["wordpress", "nav_menu", "submenu"],
+  "homepage": "https://github.com/MWDelaney/sage-wp-nav-submenu",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Michael W. Delaney",
+      "email": "michael@michaeldelaney.me"
+		}
+  ],
+  "require": {
+    "php": ">=5.3.2"
+  },
+	"autoload": {
+    "files": ["wp-nav-sumenu.php"]
+  }
+}
