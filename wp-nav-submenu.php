@@ -55,7 +55,7 @@ if (function_exists('add_filter')) {
                     unset($sorted_menu_items[$key]);
                 }
             }
-            if (!$args->show_parent_only) {
+            if (!empty($args->show_parent_only) && !$args->show_parent_only) {
                 if (count($sorted_menu_items) > 1) {
                     return $sorted_menu_items;
                 } else {
